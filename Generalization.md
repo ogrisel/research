@@ -18,7 +18,7 @@ Compare with the empirical test likelihood or MSE on the same plane.
 
 # A-SGD and generalization
 
-Intuition: A-SGD should be extra beneficial when sample size is too low and model overfits (e.g. noisy labels): in this case it should be possible to use a constant large learning rate & low batch size to fit without overfitting and use. ASGD to converge to a good expected nll minimizer.
+Intuition: A-SGD should be extra beneficial when sample size is too low and model overfits (e.g. noisy labels): in this case it should be possible to use a constant large learning rate & low batch size to fit without overfitting and use A-SGD to converge to a good expected nll minimizer.
 
 Similar analysis with large amounts of stochastic regularization (dropout, shake drop) and data-augmentation.
 
