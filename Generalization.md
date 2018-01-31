@@ -16,6 +16,10 @@ Compute likelihood landscapes for `X ~ N(0, 1)` and `y = f(x) = 2 . x`.
 Plot the Fisher-Rao landscape on the (w0, w1) plane.
 Compare with the empirical test likelihood or MSE on the same plane.
 
-# ASGD and generalization
+# A-SGD and generalization
 
-Intuition: ASGD is extra beneficial when sample a size is too low and model overfits (e.g. noisy labels): in this case it should be possible to use a constant large learning rate & low batch size to fit without overfitting and use. ASGD to converge to a good
+Intuition: A-SGD should be extra beneficial when sample size is too low and model overfits (e.g. noisy labels): in this case it should be possible to use a constant large learning rate & low batch size to fit without overfitting and use. ASGD to converge to a good expected nll minimizer.
+
+Similar analysis with large amounts of stochastic regularization (dropout, shake drop) and data-augmentation.
+
+Devise a minimal / toy setting to highlight this effect and study theory on simplistic cases.
