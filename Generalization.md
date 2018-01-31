@@ -28,6 +28,6 @@ Devise a minimal / toy setting to highlight this effect and study theory on simp
 
 Use SGDR to fit an ensemble of models in one pass. At the end of each low-LR cycle, collect one snapshot every n updates and estimate precision matrix of model weights (e.g. diag + rank one) around the average iterates (A-SGD solution taken at each SGDR cycle). Use that as a mixture of Gaussian posterior for the deep model.
 
-For new test predictions, sample 100 models from posterior distribution and compute predictive distribution for that each sample in test prediction along with credible intervals.
+For new test predictions, sample 100 models from posterior distribution and compute predictive distribution for that each sample in test prediction along to extract credibility intervals for regression problems.
 
 Find a toy problem with heteroschedastic noise to highlight the performance using a uncertainty evaluation metric (e.g Brier score for classification problem?). Compare to test-time dropout uncertainty evaluation.
