@@ -4,7 +4,7 @@
 
 - Compare Fisher-Rao norm of ResNet vs pure MLP reparametrization at each epoch when fitting on MNIST.
 
-- Compute cosine distance of natural gradient direction with (SGD, SGD + Nesterov, Adam, K-FAC) step at each epoch when fitting ResNet, DenseNet and VGG on CIFAR-10- Study Fisher-Rao norm of over-parametrize MLP.
+- Compute cosine similarity of natural gradient direction with (SGD, SGD + Nesterov, Adam, K-FAC) step at each epoch when fitting ResNet, DenseNet and VGG on CIFAR-10- Study Fisher-Rao norm of over-parametrize MLP.
 
 # Simple deep linear model
 
