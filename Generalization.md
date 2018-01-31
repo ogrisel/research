@@ -26,7 +26,7 @@ Devise a minimal / toy setting to highlight this effect and study theory on simp
 
 # Efficient GMM posterior for deep net model using SGDR LR cycles 
 
-Use SGDR to fit an ensemble of models in one pass. At the end of each low-LR cycle, collect one snapshot every n updates and estimate precision of model weights (e.g. diag + rank one) around the average iterates. Use that as a mixture of Gaussian posterior for the deep model.
+Use SGDR to fit an ensemble of models in one pass. At the end of each low-LR cycle, collect one snapshot every n updates and estimate precision matrix of model weights (e.g. diag + rank one) around the average iterates (A-SGD solution taken at each SGDR cycle). Use that as a mixture of Gaussian posterior for the deep model.
 
 For new test predictions, sample 100 models from posterior distribution and compute.
 
