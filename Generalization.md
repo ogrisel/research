@@ -23,3 +23,11 @@ Intuition: A-SGD should be extra beneficial when sample size is too low and mode
 Similar analysis with large amounts of stochastic regularization (dropout, shake drop) and data-augmentation.
 
 Devise a minimal / toy setting to highlight this effect and study theory on simplistic cases.
+
+# SGDR Posterior sampling for 
+
+Use SGDR to fit an ensemble of models in one pass. At the end of each low-LR cycle, collect one snapshot every n updates and estimate precision of model weights (e.g. diag + rank one) around the average iterates. Use that as a mixture of Gaussian posterior for the deep model.
+
+For new test predictions, sample 100 models from posterior distribution and compute.
+
+Find a toy problem with heteroschedastic noise to highlight the performance using a uncertainty evaluation metric (e.g Brier score for classification problem?). Compare to test-time dropout uncertainty evaluation.
